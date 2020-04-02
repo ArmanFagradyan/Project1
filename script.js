@@ -10,15 +10,15 @@ let secondQuestion = prompt("Во сколько обойдется?");
 var appData = {
     budget: money,
     timeData: time,
-    expenses: {
-        firstQuestion : secondQuestion
-    },
+    expenses: {},
     optionalExpenses: {},
     income: [],
     savings: false
 };
 
+appData.expenses[firstQuestion] = secondQuestion;
+
 console.log(appData);
 
 
-alert((money - secondQuestion)/30);
+alert(appData.budget/30);
