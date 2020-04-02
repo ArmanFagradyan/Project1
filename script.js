@@ -1,10 +1,8 @@
 // 'use strict'
 
-let money = prompt("Ваш бюджет на месяц?");
-// console.log(money);
+let money = prompt("Ваш бюджет на месяц?"),
+    time = prompt("Введите дату в формате YYYY-MM-DD");
 
-let time = prompt("Введите дату в формате YYYY-MM-DD");
-// console.log(time);
 
 let firstQuestion = prompt("Введите обязательную статью расходов в этом месяце");
 let secondQuestion = prompt("Во сколько обойдется?");
