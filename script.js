@@ -27,7 +27,8 @@ for (let i =0; i < 2; i++) {
     let a = prompt("Введите обязательную статью расходов в этом месяце"),
         b = prompt("Во сколько обойдется?");
 
-    if ((typeof(a))==='string' && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50 && b.length < 50) {
+    if ((typeof(a))==='string' && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && 
+        a.length < 50 && b.length < 50) {
         console.log("done");
         appData.expenses[a] = b;
     } else {
@@ -39,8 +40,8 @@ for (let i =0; i < 2; i++) {
 Второй способ использования цикла для данной задачи
 let i = 0;
 while (i < 2) {
-    let a = prompt ("Р’РІРµРґРёС‚Рµ РѕР±СЏР·Р°С‚РµР»СЊРЅСѓСЋ СЃС‚Р°С‚СЊСЋ СЂР°СЃС…РѕРґРѕРІ РІ СЌС‚РѕРј РјРµСЃСЏС†Рµ", ""),
-        b = prompt ("Р’Рѕ СЃРєРѕР»СЊРєРѕ РѕР±РѕР№РґРµС‚СЃСЏ?", "");
+    let a = prompt ("Введите обязательную статью расходов в этом месяце", ""),
+        b = prompt ("Во сколько обойдется?", "");
 
     if ( typeof(a)==='string' && typeof(a) != null && typeof(b) != null && a != "" && b != "" && a.length < 50) {
 
