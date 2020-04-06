@@ -1,4 +1,4 @@
-// 'use strict'
+// 'use strict';
 let money, time;
 
 function start() {
@@ -21,15 +21,6 @@ let appData = {
     savings: true
 };
 
-
-// let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
-//     a2 = prompt("Во сколько обойдется?", ''),
-//     a3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
-//     a4 = prompt("Во сколько обойдется?", '');
-
-// appData.expenses[a1] = a2;
-// appData.expenses[a3] = a4;
-
 function chooseExpences() {
     for (let i =0; i < 2; i++) {
         let a = prompt("Введите обязательную статью расходов в этом месяце"),
@@ -46,50 +37,6 @@ function chooseExpences() {
     
 }
 chooseExpences();
-
-/* 
-Второй способ использования цикла для данной задачи
-let i = 0;
-while (i < 2) {
-    let a = prompt ("Введите обязательную статью расходов в этом месяце", ""),
-        b = prompt ("Во сколько обойдется?", "");
-
-    if ( typeof(a)==='string' && typeof(a) != null && typeof(b) != null && a != "" && b != "" && a.length < 50) {
-
-        console.log ("done");
-
-        appData.expenses[a] = b;
-    } else {
-         console.log ("bad result");
-         i--;
-    }
-
-    i++;
-}
-
-
-Третий способ использования цикла для данной задачи
-
-let i = 0;
-do {
-    let a = prompt("Введите обязательную статью расходов в этом месяце"),
-        b = prompt("Во сколько обойдется?");
-
-    if ( typeof(a)==='string' && typeof(a) != null && typeof(b) != null && a != "" && b != "" && a.length < 50) {
-
-        console.log ("done");
-
-        appData.expenses[a] = b;
-    } else {
-         console.log ("bad result");
-         i--;
-    }
-
-    i++;
-}
-while (i < 2);
-
-*/
 
 function detectDayBudget () {
     appData.moneyPerDay = (appData.budget / 30).toFixed();
